@@ -1,0 +1,91 @@
+
+:root {
+    --dark1: #131314;
+    --dark2: #1e1f20;
+    --light: #e3e3e3;
+    --colora: #ff66f7;
+    --colora2: #537fe7;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--dark2);
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: var(--light);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    background-color: var(--dark1);
+    border: 1px solid rgba(227, 227, 227, 0.2);
+    min-width: 400px;
+    max-width: 400px;
+    padding: 40px;
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.purple-gradient {
+    background: linear-gradient(45deg, var(--colora) 0%, var(--colora2) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+#message-el {
+    font-style: italic;
+}
+button {
+    background: var(--dark2);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#reset-btn {
+    width: 75px;
+    height: calc(2 * 40px - 5px);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(150%)
+}
+
+.fa-undo { 
+    font-size: 2em;
+  }
